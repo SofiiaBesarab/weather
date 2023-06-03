@@ -3,7 +3,7 @@
 }
 
 .col-8 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .city {
@@ -13,6 +13,10 @@
 .current {
   font-size: 45px;
   font-weight: bold;
+  text-align: right;
+  position: relative;
+  top: -100px;
+  right: 20px;
 }
 
 .days {
@@ -29,6 +33,7 @@
 
 .search-container {
   display: flex;
+  padding: 10px;
 }
 
 .search-container input[type="search"] {
@@ -45,6 +50,11 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.description {
+  text-transform: capitalize;
+}
+
 p {
   text-align: center;
 }
