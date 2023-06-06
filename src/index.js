@@ -17,6 +17,7 @@ h4.innerHTML = `${day}, ${hours}:${minutes}`;
 
 //2
 function displayWeather(response) {
+  celsiusTemperature = Math.round(response.data.main.temp);
   document.querySelector("#result").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = celsiusTemperature;
   document.querySelector("#weather-description").innerHTML =
@@ -31,7 +32,6 @@ function displayWeather(response) {
       "src",
       `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
-  celsiusTemperature = response.data.main.temp;
 }
 
 function searchButton(event) {
