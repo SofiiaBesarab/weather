@@ -58,3 +58,12 @@
 p {
   text-align: center;
 }
+
+.current .active {
+  color: black;
+  cursor: default;
+}
+
+.current .active:hover {
+  text-decoration: none;
+}
